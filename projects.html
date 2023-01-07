@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, initial-scale=1.0'>
-    <title>Fieu Émilien</title>
+    <title>Émilien FIEU</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <nav class="navbar">
@@ -14,15 +15,45 @@
         <li class="link"><a href="formation.html">Ma formation</a></li>
 
         <li class="link active"><a href="projects.html">Mes Projets</a></li>
-        <li class="link "><a href="about.html">A propos</a></li>
+        <li class="link "><a href="cv.html">Mes Compétences</a></li>
         <li class="link"><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 <section class="project-section">
     <h1 class="project-heading">Mes Projets</h1>
+
     <div class="project-container">
+
         <div class="project-card">
-            <img src="img/flappy.png" class="project-image" alt="">
+            <img src="media/img/maquette.png" class="project-image" alt="">
+            <div class="project-content">
+                <h1 class="project-title">Maquette TTBlagnacais</h1>
+                <p class="project-info">Réalisation d’une maquette d’aplicaiton après un recceuil de besoin en groupe de 3, réalisé durant mon BUT
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn live"
+                            onclick='window.location.href=qhref="https://www.figma.com/proto/7VjiIayCmuTxptSemp5CbI/page?node-id=77%3A203&starting-point-node-id=77%3A203";'>Démo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="media/img/canoe.webp" class="project-image" alt="">
+            <div class="project-content">
+                <h1 class="project-title">Compétition de canoë</h1>
+                <p class="project-info">Une application Java permettant la gestion de compétition de canoë réalisé durant mon BUT en groupe de 3
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn "
+                            onclick='window.location.href="https://github.com/Tructruc/codeSAE1.1";'>Code Source
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="media/img/flappy.png" class="project-image" alt="">
             <div class="project-content">
                 <h1 class="project-title">IA Flappy Bird</h1>
                 <p class="project-info">Un réseau de neurone qui peut jouer au jeu Flappy Bird, réalisé en python avec
@@ -39,13 +70,13 @@
         </div>
 
         <div class="project-card">
-            <img src="img/lantre.png" class="project-image" alt="">
+            <img src="media/img/lantre.png" class="project-image" alt="">
             <div class="project-content">
                 <h1 class="project-title">L'antre du Truc</h1>
                 <p class="project-info">Un site réalisé en HTML, CSS et PHP
                 </p>
                 <div class="project-btn-grp">
-                    <button class="project-btn github"
+                    <button class="project-btn "
                             onclick='window.location.href="https://github.com/Tructruc/LAntreDuTruc";'>Code Source
                     </button>
                     <button class="project-btn live"
@@ -56,14 +87,14 @@
         </div>
 
         <div class="project-card ">
-            <img src="img/questionnair.png" class="project-image project-questionnaire" alt="">
+            <img src="media/img/questionnair.png" class="project-image project-questionnaire" alt="">
             <div class="project-content">
                 <h1 class="project-title">Questionaire HTML</h1>
                 <p class="project-info">Petit site réalisé lors de mon stage de 3ᵉ consistant en un questionnaire en
                     JavaScript sur les balises HTML et CSS.
                 </p>
                 <div class="project-btn-grp">
-                    <button class="project-btn github"
+                    <button class="project-btn "
                             onclick='window.location.href="https://github.com/Tructruc/Site-questionnaire-HTML";'>Code
                         source
                     </button>
@@ -75,14 +106,14 @@
         </div>
 
         <div class="project-card">
-            <img src="img/bot.png" class="project-image" alt="">
+            <img src="media/img/bot.png" class="project-image" alt="">
             <div class="project-content">
                 <h1 class="project-title">TrucBot : un bot Discord</h1>
                 <p class="project-info">Un bot discord développé en python avec lequel l'utilisateur peut interagir avec
                     par exemple un mini jeu proche du juste prix et d'autres commandes plus hummoristiques
                 </p>
                 <div class="project-btn-grp">
-                    <button class="project-btn github" onclick="window.alert('Le code source de ce projet n\'est pas public, contactez moi pour plus d\informations');
+                    <button class="project-btn" onclick="window.alert('Le code source de ce projet n\'est pas public, contactez moi pour plus d\informations');
                             ">Code Source
                     </button>
                     <button class="project-btn live" onclick='window.location.href="https://discord.gg/5jVQDSu";'>Démo
@@ -92,13 +123,13 @@
         </div>
 
         <div class="project-card">
-            <img src="img/keysound.jpg" class="project-image" alt="">
+            <img src="media/img/keysound.jpg" class="project-image" alt="">
             <div class="project-content">
                 <h1 class="project-title">KeySound</h1>
                 <p class="project-info">Un programme qui joue un son lorsque vous tapez sur une touche pour se rappeler
                     des bonne vielles machines a écrires.</p>
                 <div class="project-btn-grp">
-                    <button class="project-btn github"
+                    <button class="project-btn "
                             onclick='window.location.href="https://github.com/Tructruc/KeySound";'>Code Source
                     </button>
                 </div>
@@ -106,12 +137,12 @@
         </div>
 
         <div class="project-card">
-            <img src="img/tictactoe.png" class="project-image" alt="">
+            <img src="media/img/tictactoe.png" class="project-image" alt="">
             <div class="project-content">
                 <h1 class="project-title">TicTacToe</h1>
                 <p class="project-info">Le jeu du morpion réalisé en python avec la librarie Pygame.</p>
                 <div class="project-btn-grp">
-                    <button class="project-btn github"
+                    <button class="project-btn "
                             onclick='window.location.href="https://github.com/Tructruc/TicTacToe";'>Code Source
                     </button>
                     <button class="project-btn live" onclick='window.location.href="https://youtu.be/Knbt7mDzv6I";'>
