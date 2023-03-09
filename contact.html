@@ -33,8 +33,28 @@
         <input type="text" name="name" id="name" autocomplete="off" placeholder="Nom">
         <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
         <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
-        <button type="submit" class="form-submit-btn">Envoyer</button>
+        <button onclick="sendMessage()" type="button" class="form-submit-btn">Envoyer</button>
     </form>
 </section>
+
+
 </body>
+
+<script>
+    function sendMessage() {
+        var request = new XMLHttpRequest();
+        request.open("POST", "https://discord.com/api/webhooks/1083416329127727205/wcTFr-8eC5HrEv6_63TjtnKw3vNMAR-gbYYe-YxgxRXDv5nZ7N9gIQhhfxO37StbQnXQ");
+
+        request.setRequestHeader('Content-type', 'application/json');
+
+        var params = {
+            username: document.getElementById("name").value ,
+            avatar_url: "",
+            content: "Mail : " + document.getElementById("email").value + "\nContenu : " + document.getElementById("msg").value
+        }
+
+        request.send(JSON.stringify(params));
+        alert("Le message a bien été envoyé");
+    }
+</script>
 </html>
