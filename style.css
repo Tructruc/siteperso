@@ -294,6 +294,10 @@ body {
     line-height: 2em;
 }
 
+.contact-form {
+    margin-top: 50px;
+}
+
 
 #timeline-content {
     margin-top: 50px;
@@ -404,6 +408,13 @@ body {
     height: 2vh;
     border-radius: 10px;
     overflow: hidden;
+    animation: skills 1s ease-in-out;
+}
+
+@keyframes skills {
+    0% {
+        width: 0;
+    }
 }
 
 .java {
